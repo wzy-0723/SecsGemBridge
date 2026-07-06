@@ -43,6 +43,11 @@
 build/
 Build/
 build-*/
+# build
+/build
+/out
+*.vs
+CMakePresets.json
 
 # CMake generated files
 CMakeFiles/
