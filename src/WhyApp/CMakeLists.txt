@@ -23,7 +23,6 @@ target_link_libraries(${PROJECT_NAME}
         Qt::Widgets
         SecsGem
 )
-
 install(TARGETS ${PROJECT_NAME}
     BUNDLE  DESTINATION .
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
