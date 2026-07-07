@@ -4,10 +4,12 @@
 #include <QAction>
 #include <QMessageBox>
 #include <QDebug>
+#include "FileUtil.h"
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    why::AppendBuildPath("");
     ui->setupUi(this);
     // connect(ui->pushButton,&QPushButton::clicked,this,[=](){
     //     ui->textEdit->append("haha");
@@ -26,6 +28,7 @@ MainWindow::MainWindow(QWidget *parent)
     // 绑定右键信号
     connect(ui->treeView, &QTreeView::customContextMenuRequested,
             this, &MainWindow::onTreeRightClick);
+
 
 
     // 2. 构建多级树形目录

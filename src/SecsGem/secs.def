@@ -1,0 +1,4 @@
+LIBRARY	"secs"
+
+EXPORTS
+CreateSecsDataCenter
