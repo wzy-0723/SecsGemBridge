@@ -45,15 +45,12 @@ Build/
 build-*/
 
 # wzy
+/install
 /build
 /out
 *.vs
-CMakePresets.json
 backup-codes.txt
 *.qtcreator
-
-
-
 
 
 # CMake generated files
