@@ -1,14 +1,9 @@
-if (CMAKE_SYSTEM_NAME MATCHES "Windows")
-    set(LIB_EXT_NAME ".a")
-	set(LIB_PRE_NAME "")
-	set(DYN_EXT_NAME ".dll")
+# Windows 系统（32/64位通用）
+if(WIN32)
     set(OS_NAME "Windows")
+endif()
 
-elseif (CMAKE_SYSTEM_NAME MATCHES "linux")
-    set(LIB_EXT_NAME ".a")
-	set(LIB_PRE_NAME ".lib")
-	set(DYN_EXT_NAME ".so")
+# Linux 系统
+if(UNIX AND NOT APPLE)
     set(OS_NAME "linux")
-else()
-	#mac
 endif()
