@@ -1,2 +1,0 @@
-add_subdirectory(Platform)
-add_subdirectory(Common)
