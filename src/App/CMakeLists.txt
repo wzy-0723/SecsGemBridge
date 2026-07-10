@@ -16,6 +16,8 @@ target_include_directories(${PROJECT_NAME}
     PRIVATE
         ${src}/Common
         ${src}/SecsGem
+        ${src}/SecsGem/include
+        ${src}/Platform/include
 )
 
 target_link_libraries(${PROJECT_NAME}

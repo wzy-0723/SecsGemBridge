@@ -2,7 +2,7 @@
 
 //#include "logger.h"
 
-namespace jca
+namespace why
 {
 	IEndpoint* CreateTcpSingleServerEndpoint(const TcpInfo& info)
 	{

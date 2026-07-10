@@ -9,7 +9,7 @@
 #include <QLineEdit>
 #include <QPushButton>
 #include <QVBoxLayout>
-
+#include "hsms_transport.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -37,5 +37,6 @@ private:
     QStandardItemModel* m_treeModelSF;
     // 保存当前右键选中的节点
     QModelIndex m_currentIndex;
+    //why::HsmsTransport m_hsmsTransport;
 };
 #endif // MAINWINDOW_H

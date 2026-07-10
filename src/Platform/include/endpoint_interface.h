@@ -4,7 +4,7 @@
 #include "endpoint_def.h"
 #include "endpoint_listener_interface.h"
 
-namespace jca
+namespace why
 {
 	/**
 	* @brief 通讯终端的接口

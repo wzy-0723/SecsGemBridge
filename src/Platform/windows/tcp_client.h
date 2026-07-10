@@ -8,7 +8,7 @@
 #include <mutex>
 #include <thread>
 
-namespace jca
+namespace why
 {
     class TcpClient : public IEndpoint
     {

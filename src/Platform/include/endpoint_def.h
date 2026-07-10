@@ -3,7 +3,7 @@
 
 #include "standard.h"
 
-namespace jca
+namespace why
 {
     // /**
     // * @brief 定义串口的配置信息
