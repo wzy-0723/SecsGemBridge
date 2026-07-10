@@ -12,15 +12,14 @@ qt_add_executable(${PROJECT_NAME}
     mainwindow.ui
 )
 
-# target_include_directories(${PROJECT_NAME}
-#     PRIVATE
-#         ${src}/Common
-#         ${src}/SecsGem
-# )
 
-include_directories(${src}/Common)
-include_directories(${src}/SecsGem)
-include_directories(${src}/SecsGem/include)
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        ${src}/Common
+        ${src}/SecsGem
+        ${src}/SecsGem/include
+        ${src}/Platform/include
+)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE

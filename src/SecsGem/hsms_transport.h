@@ -1,15 +1,20 @@
 #pragma once
 
 #include "hsms_def.h"
+
 #include "secs_transport_interface.h"
+
 #include "gem_info.h"
 
 #include <functional>
 #include "endpoint_listener_interface.h"
 #include "endpoint_interface.h"
+
+#include "secs_transport_interface.h"
 namespace why {
 
-class HsmsTransport : public ISecsTransport, public IEndpointListener
+class HsmsTransport : public IEndpointListener,public ISecsTransport
+
 {
 public:
     HsmsTransport();

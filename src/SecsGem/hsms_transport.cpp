@@ -79,7 +79,11 @@ void HsmsTransport::OnDisconnected()
 
 namespace
 {
+
     const uint32_t g_uHsmsLengthSize = 4;
+
+const uint32_t g_uHsmsLengthSize = 4;
+
 }
 
 void HsmsTransport::OnReceive(const uint8_t* pData, uint32_t uDataLen)

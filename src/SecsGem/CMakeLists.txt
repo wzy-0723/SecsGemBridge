@@ -29,6 +29,11 @@ add_dependencies(${PROJECT_NAME}
     Platform
 )
 
+include_directories(${src}/Common)
+include_directories(${src}/SecsGem/include)
+include_directories(${src}/Platform)
+include_directories(${src}/Platform/include)
+
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
         Common
