@@ -9,11 +9,17 @@ set(src_path "./")
 set(all_sourcefile ${all_sourcefile} ${platform_include_headers})
 add_library(${PROJECT_NAME} STATIC ${all_sourcefile})
 
-
-include_directories(${src}/Common)
-include_directories(${src}/Platform/include)
-
 add_dependencies(${PROJECT_NAME} Common)
+
+
+target_include_directories(${PROJECT_NAME}
+    PUBLIC
+        ${src}/Common
+	${src}/Platform/include
+)
+
+#include_directories(${src}/Common)
+#include_directories(${src}/Platform/include)
 target_link_libraries(${PROJECT_NAME} 
 	PUBLIC
 	        Common

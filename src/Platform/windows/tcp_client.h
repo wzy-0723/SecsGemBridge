@@ -8,7 +8,7 @@
 #include <mutex>
 #include <thread>
 
-namespace jca
+namespace why
 {
     class TcpClient : public IEndpoint
     {
@@ -45,8 +45,8 @@ namespace jca
 		std::string					m_strHostAddress{ "127.0.0.1" };		//!< 主机地址
 		uint32_t					m_uPort{ 80 };	            			//!< 端口号
 		SOCKET 						m_connectSocket{INVALID_SOCKET};		//!< 通讯套接字
-		std::mutex					m_lock;						//!< 线程同步锁
-		ThreadPrt					m_recvThreadPtr;			//!< 接收线程句柄
-		bool						m_bWouldExit{false};		//!< 是否退出接收线程循环        
+        std::mutex					m_lock;                                 //!< 线程同步锁
+        ThreadPrt					m_recvThreadPtr;                        //!< 接收线程句柄
+        bool						m_bWouldExit{false};                    //!< 是否退出接收线程循环
     };
 }

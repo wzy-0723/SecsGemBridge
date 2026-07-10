@@ -3,7 +3,7 @@
 
 #include "standard.h"
 
-namespace jca
+namespace why
 {
 	/**
 	* @class IEndpointListener

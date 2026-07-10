@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-//#include "FileUtil.h"
+#include "FileUtil.h"
+#include <QTextEdit>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -26,7 +27,24 @@ MainWindow::MainWindow(QWidget *parent)
 
     // 可选：默认全部展开
     ui->treeViewSF->expandAll();
+
+    // 绑定点击信号到自定义槽
+    connect(ui->pushButton, &QPushButton::clicked,
+            this, &MainWindow::BtnClicked);
+
 }
+
+//test
+
+void MainWindow::BtnClicked()
+{
+    // 点击后执行代码
+    QString all = ui->textEditSecs2Log->toPlainText();
+
+
+}
+
+//test-end
 
 MainWindow::~MainWindow()
 {

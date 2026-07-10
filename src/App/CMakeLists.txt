@@ -12,11 +12,15 @@ qt_add_executable(${PROJECT_NAME}
     mainwindow.ui
 )
 
-target_include_directories(${PROJECT_NAME}
-    PRIVATE
-        ${src}/Common
-        ${src}/SecsGem
-)
+# target_include_directories(${PROJECT_NAME}
+#     PRIVATE
+#         ${src}/Common
+#         ${src}/SecsGem
+# )
+
+include_directories(${src}/Common)
+include_directories(${src}/SecsGem)
+include_directories(${src}/SecsGem/include)
 
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
@@ -27,7 +31,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 
 # 配置构建依赖
-add_dependencies(${proj_name}
+add_dependencies(${PROJECT_NAME}
     Common
     SecsGem
 )

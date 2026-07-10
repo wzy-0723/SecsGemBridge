@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ServerWidget</class>
+ <widget class="QWidget" name="ServerWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ServerWidget</string>
+  </property>
+  <widget class="QSplitter" name="splitter_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>631</width>
+     <height>491</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Vertical</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="text">
+     <string>服务器</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditRead"/>
+   <widget class="QTextEdit" name="textEditWrite"/>
+   <widget class="QSplitter" name="splitter">
+    <property name="orientation">
+     <enum>Qt::Orientation::Horizontal</enum>
+    </property>
+    <widget class="QPushButton" name="buttonsend">
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonclose">
+     <property name="text">
+      <string>关闭</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

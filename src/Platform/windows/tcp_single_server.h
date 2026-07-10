@@ -7,7 +7,7 @@
 #include "endpoint_interface.h"
 #include "endpoint_listener_interface.h"
 #include <thread>
-namespace jca
+namespace why
 {
 	class TCPSingleServer : public IEndpoint
 	{
